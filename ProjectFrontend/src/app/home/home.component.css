@@ -1,0 +1,121 @@
+.center{
+    padding-top: 40px;
+}
+
+.menu-center{
+    background-color: #E5EAFA;
+    height:100px;
+    border-radius: 15px;
+}
+.menu-center ul{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-around;
+    
+    border-bottom: 1px solid grey ;
+}
+.menu-center ul li {
+    list-style-type: none;
+    color:#80868E;
+    font-size:14px;
+    font-weight: 500;
+    cursor: pointer;
+  
+}
+.menu-center ul li.active {
+    list-style-type: none;
+    color:#156fe4;
+    font-size:14px;
+    font-weight: 500;
+  
+}
+.menu-center ul li:hover{
+    color:#03040c;
+}
+.banner{
+    margin-top: 30px;
+  
+    border-radius: 15px;
+    background-color: #ffff;
+}
+.banner img{
+    width:50%;
+    border-radius: 15px;
+    padding-top: 10px;
+    object-fit: cover;
+    transform: translateX(50%);
+
+}
+.banner h4{
+    padding-top: 10px;
+    font-family: "Praise", cursive;
+    font-weight: 400;
+    font-style: normal;
+  text-align: center;
+}
+
+
+
+/****/
+
+
+.right{
+    padding-right: 20px;
+}
+.live{
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 40px;
+    height:50px;
+    position: relative;
+    padding-top: 40px;
+    padding-bottom:40px;
+    display: flex;
+    align-items: center;
+}
+.live-red{
+    position: absolute;
+    background-color: red;
+    color:white;
+    top:3px;
+    font-size: 10px;
+    width:20px;
+    left:-5px;
+}
+.user-on img{
+    width: 25%;
+    margin-left:20px ;
+    border-radius: 50%;
+    border: 2px solid rgb(25, 238, 25);
+}
+.nhipsongcty{
+    background-color: #2FC7F7;
+    border-radius: 10px;
+    margin-top: 10px;
+    height:35px;
+    position: relative;
+    display:flex;
+    padding:5px;
+    justify-content: space-between;
+}
+.nhipsongcty p{
+    color:#ffff;
+    font-size: 12px;
+    font-weight: 600;
+    transform: translateY(50%);
+}
+.nhipsongcty div{
+    color:#ffff;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.alert-primary{
+    margin-top:20px;
+}
+.cacbaiphobien img{
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 5px;
+}

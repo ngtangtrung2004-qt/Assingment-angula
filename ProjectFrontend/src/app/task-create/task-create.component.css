@@ -1,0 +1,50 @@
+.row{
+    margin:auto;
+}
+.alert{
+    width: 100%;
+    margin-top: 50px;
+}
+.alert-info{
+    width:100%;
+    transform: translateX(20%);
+    font-weight: 600;
+    color:rgb(33, 35, 37);
+}
+form{
+    transform: translateX(20%);
+    display: flex;
+    flex-wrap: wrap;
+}
+.mb-3{
+    flex: 0 0 50%;
+    width: 100%;
+}
+form input{
+width:98%;
+}
+textarea{
+    width:98%;  
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    height:80px;
+
+}
+label{
+    color:aliceblue;
+    font-weight: 600;
+   
+}
+.btn-primary{
+    margin: auto;
+    width: 80%;
+}
+select{
+    width:98%;
+    height:38px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+

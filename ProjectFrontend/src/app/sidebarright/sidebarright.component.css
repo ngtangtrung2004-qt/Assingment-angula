@@ -1,0 +1,60 @@
+.right{
+    width: 150%;
+    padding-right: 20px;
+}
+.live{
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 40px;
+    height:50px;
+    position: relative;
+    padding-top: 40px;
+    padding-bottom:40px;
+    display: flex;
+    align-items: center;
+}
+.live-red{
+    position: absolute;
+    background-color: red;
+    color:white;
+    top:3px;
+    font-size: 10px;
+    width:20px;
+    left:-5px;
+}
+.user-on img{
+    width: 25%;
+    margin-left:20px ;
+    border-radius: 50%;
+    border: 2px solid rgb(25, 238, 25);
+}
+.nhipsongcty{
+    background-color: #2FC7F7;
+    border-radius: 10px;
+    margin-top: 10px;
+    height:35px;
+    position: relative;
+    display:flex;
+    padding:5px;
+    justify-content: space-between;
+}
+.nhipsongcty p{
+    color:#ffff;
+    font-size: 12px;
+    font-weight: 600;
+    transform: translateY(50%);
+}
+.nhipsongcty div{
+    color:#ffff;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.alert-primary{
+    margin-top:20px;
+}
+.cacbaiphobien img{
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 5px;
+}

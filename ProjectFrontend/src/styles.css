@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: #2E327C url('/assets/images/background.jpg') fixed 0 0 no-repeat;
+    background-size:cover;
+}

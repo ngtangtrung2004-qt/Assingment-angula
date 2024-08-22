@@ -1,0 +1,14 @@
+{
+  "routes": [
+    "/createduan",
+    "/createtask",
+    "/home",
+    "/listduan",
+    "/listnv",
+    "/listtask",
+    "/login",
+    "/quanlychung",
+    "/register",
+    "/tkcanhan"
+  ]
+}

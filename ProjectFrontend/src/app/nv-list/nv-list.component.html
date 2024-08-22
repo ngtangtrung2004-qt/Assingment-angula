@@ -1,0 +1,33 @@
+<div class="row">
+    <div class="col-9">
+<div class="alert alert-info" role="alert">
+ DANH SÁCH NHÂN VIÊN
+</div>
+<span *ngIf="loading" class="loader"></span>
+<table class="table table-success table-striped" *ngIf="!loading">
+  <thead>
+      <tr>
+        <th scope="col">TaskID</th>
+        <th scope="col"> Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Khu Vực</th>
+        <th scope="col">SĐT</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let item of listNv, let i = index ">
+      <tr>
+        <th scope="row">{{i+1}}</th>
+        <td>{{item.name}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.khuvuc}}</td>
+        <td>{{item.sdt}}</td>
+        <td><button type="button" class="btn btn-danger">Delete</button>&nbsp;
+          <button type="button" class="btn btn-warning" routerLink="/edittask">Edit</button></td>
+      </tr>
+    </tbody>
+</table>
+</div>
+<div class="col-2"><app-sidebarright></app-sidebarright></div>
+</div>
+

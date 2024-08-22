@@ -1,0 +1,76 @@
+.container{
+    margin-top: 50px;
+}
+.money_project{
+    list-style-type: none;
+}
+.money_project li {
+    display: flex;
+    justify-content:flex-start;
+}
+.money_project li p{
+flex:0 0 50%;
+text-align: left;
+width:100%;
+color:aliceblue;
+font-weight: 500;
+}
+.rounded-circle{
+    width:30%;
+}
+.alert-primary{
+    color:rgb(54, 55, 55);
+    font-weight: 600;
+    margin-top:5px;
+}
+.name{
+    color:azure;
+}
+.team{
+    color:aliceblue;
+}
+.list-group{
+    margin-top:-12px;
+}
+
+/**************/
+.nav>li{
+    float: left;
+    margin-right: 15px;
+  }
+  
+  .nav>li>a{
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+  }
+  
+  .nav li{
+    position: relative;
+    list-style:none;
+  }
+  
+  .nav li a{
+    padding: 10px;
+    line-height: 20px;
+    display: inline-block;
+  }
+  
+  .nav .sub-menu{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 200px;
+    background-color: #eee;
+    padding: 5px 20px;
+    z-index: 100;
+  }
+  
+  .nav li:hover>.sub-menu{
+    display: block;
+  }
+  
+  .nav>li>.sub-menu{
+    top: 40px;
+    left: 0;
+  }

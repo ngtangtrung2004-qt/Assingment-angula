@@ -1,0 +1,44 @@
+<div class="row">
+  <div class="col-9">
+    <div class="alert alert-info" role="alert">
+      TẠO TASK
+    </div>
+    <form [formGroup]="TaskForm" (ngSubmit)="onSubmit()">
+      <div class="mb-3">
+        <label for="tentask" class="form-label">Tên task</label>
+        <input type="text" class="form-control" formControlName="ten_task" id="tentask">
+      </div>
+      <div class="mb-3">
+        <label for="id_du_an" class="form-label">Id Dự án</label>
+        <select id="id_du_an" formControlName="id_du_an" >
+          <option value="" selected >Chọn Dự Án </option>
+          <option *ngFor="let item of duan" value="{{item.id}}" >{{item.ten_du_an}}</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="nhan_vien_id" class="form-label">ID Nhân viên</label>
+        <select name="nhan_vien_id" id="nhan_vien_id" formControlName="nhan_vien_id">
+          <option value="" selected>Chọn Nhân Viên</option>
+          <option *ngFor="let itemNv of nhanvien" value="{{itemNv.id}}" >{{itemNv.name}}</option>
+        </select>
+
+      </div>
+      <div class="mb-3">
+        <label for="tinhtrang" class="form-label">Tình Trạng </label>
+        <input type="text" class="form-control" formControlName="tinh_trang" id="tinhtrang">
+        <span>0:Off-1:Đang xử lý</span>
+      </div>
+      <div class="mb-3">
+        <label for="priority" class="form-label">Priority</label>
+        <input type="text" class="form-control" formControlName="priority" id="priority">
+      </div>
+      <div class="mb-3">
+        <label for="mota" class="form-label">Mô tả</label>
+        <textarea name="mota" id="mota" formControlName="mota" ></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+</div>

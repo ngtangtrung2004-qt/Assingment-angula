@@ -1,0 +1,112 @@
+/**header*/
+@import url('https://fonts.googleapis.com/css2?family=Ingrid+Darling&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Ingrid+Darling&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Ingrid+Darling&family=Praise&display=swap');
+
+header {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo img {
+    width: 50%;
+    height: auto;
+}
+
+.search {
+    position: relative;
+    margin-left: -130px;
+}
+
+.search input {
+    outline: none;
+    border: none;
+    background-color: rgba(255, 255, 255, .18);
+    border-radius: 15px;
+    width: 130%;
+    padding-left: 20px;
+    height: 35px;
+}
+
+.search fa-icon {
+    color: white;
+    position: absolute;
+    top: 5px;
+    left: 240px;
+}
+
+.infouser {
+    display: flex;
+    align-items: center;
+}
+
+.infouser .avatar img {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.nameuser {
+    color: white;
+    font-size: 1em;
+    padding-left: 3px;
+}
+
+.infouser fa-icon {
+    color: aliceblue;
+    padding-left: 3px;
+}
+
+.box {
+    display: flex;
+}
+
+.muangay {
+    height: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #FBB62F;
+    border-radius: 15px;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+
+}
+
+.moi {
+    margin-left: 5px;
+    height: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color:red;
+    border-radius: 15px;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+
+
+}
+
+/*grid layout*/
+article {
+    display: grid;
+    grid-template-areas: 'a  b ';
+    /* grid-template-rows: 50px 1fr 30px; */
+    grid-gap: 40px;
+    grid-template-columns: 1fr 6fr;
+}
+
+router-outlet {
+    display: none;
+}
+
+/*siderbar- left ((menu))*/
+
+/**center*/
+
+/*ringht*/

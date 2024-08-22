@@ -1,0 +1,47 @@
+<div class="row">
+    <div class="col-9">
+        <div class="alert alert-info" role="alert">
+            SỬA CHỮA DỰ ÁN 
+           </div>
+<form  #DuanFormEdit="ngForm" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label for="tenduan" class="form-label">Tên dự án</label>
+      <input type="text" class="form-control" [(ngModel)]="duan.ten_du_an" name="ten_du_an" id="tenduan"  >
+    </div>
+    <div class="mb-3">
+      <label for="leader" class="form-label">Leader</label>
+      <select name="leader" id="leader" [(ngModel)]="duan.leader"  size="1">
+        <option *ngFor="let itemnv of nhanvien" value="{{itemnv.id}}">{{itemnv.name}}</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="sothanhvien" class="form-label">Số thành viên</label>
+      <input type="number" class="form-control" [(ngModel)]="duan.so_thanh_vien" name="so_thanh_vien"  id="sothanhvien">
+    </div>
+    <div class="mb-3">
+        <label for="chiphi" class="form-label">Chi phí dự án</label>
+        <input type="number" class="form-control" [(ngModel)]="duan.chiphi"  name="chiphi"  id="chiphi">
+      </div>
+      <div class="mb-3">
+        <label for="ngaytao" class="form-label">Ngày tạo dự án</label>
+        <input type="date" class="form-control" [(ngModel)]="duan.ngaytao" name="ngaytao"   id="ngaytao">
+      </div>
+      <div class="mb-3">
+        <label for="ngayhethan" class="form-label">Ngày tạo kết thúc dự án </label>
+        <input type="date" class="form-control" [(ngModel)]="duan.ngayhethan" name="ngayhethan"   id="ngayhethan">
+      </div>
+      <div class="mb-3">
+        <label for="thanhvien" class="form-label">Thành Viên</label>
+        <select name="thanhvien" id="thanhvien" [(ngModel)]="duan.thanhvien" multiple size="1">
+          <option *ngFor="let itemnv of nhanvien" value="{{itemnv.id}}">{{itemnv.name}}</option>
+        </select>
+      </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+    </div>
+
+<div>
+  
+</div>
+    
+</div>

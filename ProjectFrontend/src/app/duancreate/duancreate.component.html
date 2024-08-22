@@ -1,0 +1,52 @@
+<div class="row">
+    <div class="col-9">
+        <div class="alert alert-info" role="alert">
+            TẠO DỰ ÁN 
+           </div>
+<form   [formGroup]="DuanForm" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label for="tenduan" class="form-label">Tên dự án</label>
+      <input type="text" class="form-control" id="tenduan" formControlName="ten_du_an" >
+      <span *ngIf="!DuanForm.get('ten_du_an')?.valid"><fa-icon [icon]="faTriangleExclamation"></fa-icon>Trường Không được để trống</span>
+    </div>
+    <div class="mb-3">
+      <label for="sothanhvien" class="form-label">Số thành viên</label>
+      <input type="number" class="form-control" id="sothanhvien" formControlName="so_thanh_vien">
+      <span *ngIf="!DuanForm.get('so_thanh_vien')?.valid"><fa-icon [icon]="faTriangleExclamation"></fa-icon>Trường Không được để trống</span>
+    </div>
+    <div class="mb-3">
+      <label for="thanhvien" class="form-label">Thành Viên</label>
+      <select name="thanhvien" id="thanhvien" multiple size="4" formControlName="thanhvien">
+        <option  value="">Chọn Thành Viên</option>
+        <option *ngFor="let itemNV of thanhvien" value="{{itemNV.id}}">{{itemNV.name}}</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="leader" class="form-label">Leader</label>
+      <select name="leader" id="leader"  formControlName="leader">
+        <option  value="">Chọn Thành Viên</option>
+        <option *ngFor="let itemNV of thanhvien" value="{{itemNV.id}}">{{itemNV.name}}</option>
+      </select>
+      <span *ngIf="!DuanForm.get('leader')?.valid"><fa-icon [icon]="faTriangleExclamation"></fa-icon>Trường Không được để trống</span>
+    </div>
+   
+    <div class="mb-3">
+        <label for="chiphi" class="form-label">Chi phí dự án</label>
+        <input type="number" class="form-control" id="chiphi" formControlName="chiphi">
+        <span *ngIf="!DuanForm.get('chiphi')?.valid"><fa-icon [icon]="faTriangleExclamation"></fa-icon>Trường Không được để trống</span>
+      </div>  
+      <div class="mb-3">
+        <label for="ngaytao" class="form-label">Ngày tạo dự án</label>
+        <input type="date" class="form-control" id="ngaytao" formControlName="ngaytao">
+        <span *ngIf="!DuanForm.get('ngaytao')?.valid"><fa-icon [icon]="faTriangleExclamation"></fa-icon>Trường Không được để trống</span>
+      </div>
+      <div class="mb-3">
+        <label for="ngayhethan" class="form-label">Ngày tạo kết thúc dự án </label>
+        <input type="date" class="form-control" id="ngayhethan" formControlName="ngayhethan">
+        <span *ngIf="!DuanForm.get('ngayhethan')?.valid"><fa-icon [icon]="faTriangleExclamation"></fa-icon>Trường Không được để trống</span>
+      </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+    </div>
+    
+</div>

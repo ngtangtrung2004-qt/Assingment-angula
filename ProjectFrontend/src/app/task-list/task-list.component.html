@@ -1,0 +1,34 @@
+<div class="row">
+    <div class="col-9">
+<div class="alert alert-info" role="alert">
+ DANH SÁCH TASK
+</div>
+<span *ngIf="loading" class="loader"></span>
+<a routerLink="/createtask" *ngIf="!loading" ><button type="button" class="btn btn-primary" >Tạo Mới </button></a> 
+<table class="table table-success table-striped" *ngIf="!loading">
+  <thead>
+      <tr>
+        <th scope="col">TaskID</th>
+        <th scope="col">Task Name</th>
+        <th scope="col">Employee</th>
+        <th scope="col">Description</th>
+        <th scope="col">Status</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let item of task, let i = index ">
+      <tr>
+        <th scope="row">{{i+1}}</th>
+        <td>{{item.ten_task}}</td>
+        <td>{{item.nhan_vien_id}}</td>
+        <td>{{item.mota}}</td>
+        <td>{{item.tinh_trang}}</td>
+        <td><button type="button" class="btn btn-danger" (click)="xoa(item.id)">Delete</button>&nbsp;
+          <button type="button" class="btn btn-warning" routerLink="/edittask/{{item.id}}">Edit</button></td>
+      </tr>
+    </tbody>
+</table>
+</div>
+<div class="col-2"><app-sidebarright></app-sidebarright></div>
+</div>
+

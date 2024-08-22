@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col-9">
+<div class="alert alert-info" role="alert">
+  TASK CỦA TÔI 
+</div>
+<table class="table table-success table-striped">
+  <thead>
+      <tr>
+        <th scope="col">TaskID</th>
+        <th scope="col">Task Name</th>
+        <th scope="col">Employee</th>
+        <th scope="col">Description</th>
+        <th scope="col">Status</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let item of list_task_of_my, let i=index">
+      <tr>
+        <th scope="row">{{i+1}}</th>
+        <td>{{item.ten_task}}</td>
+        <td>{{item.nhan_vien_id}}</td>
+        <td>{{item.mota}}</td>
+        <td>{{item.tinh_trang}}</td>
+        <td><button type="button" class="btn btn-danger" (click)="xoatask(item.id)">Delete</button>&nbsp;
+          <button type="button" class="btn btn-warning" routerLink="/edittask/{{item.id}}">Edit</button></td>
+      </tr>
+    </tbody>
+</table>
+</div>
+</div>
+

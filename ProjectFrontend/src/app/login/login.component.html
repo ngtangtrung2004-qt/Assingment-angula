@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="circle1">
+    </div>
+    <div class="circle2">
+    </div>
+    <div class="form">
+        <form #formlogin="ngForm" (ngSubmit)="onSubmit(formlogin)">
+            <h2 class="title">LOGIN HERE</h2>
+            <div>
+           <label for="email">Email</label>
+           <input type="text" name="email" ngModel id="email">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" ngModel id="password">
+        </div>
+        <button type="submit">Log In</button>
+        <div class="social">
+          <div class="go"><i class="fab fa-google"></i>  Google</div>
+          <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
+        </div>
+           
+        </form>
+    </div>
+</div>

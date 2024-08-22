@@ -1,0 +1,36 @@
+<div class="row">
+    <div class="col-9">
+      <div class="alert alert-info" role="alert">
+        CẬP NHẬT USER
+      </div>
+      <!-- <span class="loader"></span> -->
+      <form (ngSubmit)="onSubmit()" #userEdit="ngForm" >
+        <div class="mb-3">
+          <label for="name" class="form-label">Tên </label>
+          <input type="text" class="form-control" [(ngModel)]="user.name" name="name" id="name">
+        </div>
+        <div class="mb-3">
+          <label for="Email" class="form-label">Email</label>
+          <input type="text" class="form-control" [(ngModel)]="user.email" name="email" id="Email">
+        </div>
+        <div class="mb-3">
+            <label for="sdt" class="form-label">Số điện thoại </label>
+            <input type="text" class="form-control" [(ngModel)]="user.sdt" name="sdt" id="sdt">
+          </div>
+          <div class="mb-3">
+            <label for="khuvuc" class="form-label">Khu Vực </label>
+            <input type="text" class="form-control" [(ngModel)]="user.khuvuc" name="khuvuc" id="khuvuc">
+          </div>
+        <div class="mb-3">
+          <label for="tinhtrang" class="form-label">Tình Trạng </label>
+          <input type="text" class="form-control" [(ngModel)]="user.status" name="status" id="tinhtrang">
+        </div>
+        <div class="mb-3">
+          <label for="priority" class="form-label">Avatar</label>
+          <input type="file" class="form-control" [(ngModel)]="user.avatar" name="priority" id="priority">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  
+  </div>

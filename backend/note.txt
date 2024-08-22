@@ -1,0 +1,40 @@
+1- Tạo ứng dụng express js 
+    $ npx express-generator ejs
+2- Caif node_module 
+    npm install
+3- cài sequelize và models 
+   npm install --save-dev sequelize-cli
+   npm install --save mysql2 
+
+Tạo bảng 
+npx sequelize-cli model:generate --name Post --attributes title:string,description:text,image:string
+
+
+
+
+di chuyển dữ liệ vào mảng 
+npx sequelize-cli db:migrate
+npx sequelize-cli init
+
+- Tạo seeder để thêm sản tự do 
+npx sequelize-cli seed:generate --name demo-user 
+- Go vao o giua file seed
+up: (queryInterface, Sequelize) => {
+    return queryInterface.bulkInsert('Users', [{
+      firstName: 'John',
+      lastName: 'Doe',
+      email: 'example@example.com',
+      createdAt: new Date(),
+      updatedAt: new Date()
+    }]);
+  },
+
+
+
+  * npx sequelize-cli seed:generate --name demo-user lệnh này sẽ tạo một tập tệp seeder để tạo các trường dữ liệu cho bảng 
+    npx sequelize-cli db:seed:all -> run create dữ liệu cho table 
+    npm install @faker-js/faker --save-dev random tao ngau nhien du lieu 
+
+    *npm install bcrypt
+    require const bcrypt = require('bcrypt');
+const saltRounds = 10;

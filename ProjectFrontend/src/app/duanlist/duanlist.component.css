@@ -1,0 +1,86 @@
+.col-9{
+    padding-left: 80px;
+}
+.alert{
+width: 100%;
+margin-top: 50px;
+}
+table{
+    width: 100%;
+}
+
+
+
+/*****/
+/*css Loader*/
+.loader{
+    position: relative;
+    font-size: 30px;
+    letter-spacing: 2px;
+    top:20%;
+    left:40%;
+  }
+  .loader:before {
+    content: "loading...";
+    color: #fff;
+
+  }
+  .loader:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #ff3d00;
+    border-radius: 50%;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    top: -70px;
+    animation: motion 3s ease-in-out infinite;
+  }
+
+  @keyframes motion {
+    0%, 50%, 100% {
+      transform: translateX(0) scale(1);
+    }
+    25% {
+      transform: translateX(-100px) scale(0.3);
+    }
+    75% {
+      transform: translateX(100px) scale(0.3);
+    }
+  }
+
+
+  /**/
+  .loader1{
+    font-size: 25px;
+    color: #e2530b;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    position: relative;
+    top:20%;
+    left:40%;
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  .loader1:after{
+    content: 'Đang Xử Lý...';
+    position: relative;
+    z-index: 5;
+  }
+  .loader1:before{
+    content: '';
+    height: 6px;
+    border: 1px solid;
+    border-radius: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    background: linear-gradient(#FF3D00 100%, transparent 0) no-repeat;
+    background-size: 0% auto;
+    animation: 4s lineGrow linear infinite;
+  }
+
+  @keyframes lineGrow {to {  background-size: 100% auto}}
